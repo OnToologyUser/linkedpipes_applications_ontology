@@ -1,0 +1,103 @@
+{
+  "@context" : {
+    "backgroundColor" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Filter" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"
+    },
+    "FilterState" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "label" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "author" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author",
+      "@type" : "@id"
+    },
+    "conceptIri" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "enabled" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "id" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "filters" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "FilterConfiguration" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"
+    },
+    "value" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "items" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items",
+      "@type" : "@id"
+    },
+    "visible" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "filterGroups" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups",
+      "@type" : "@id"
+    },
+    "VisualizerConfiguration" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    },
+    "state" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state",
+      "@type" : "@id"
+    },
+    "endpoint" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "graphIri" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FilterGroup" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    },
+    "Configuration" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+    },
+    "filteredBy" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy",
+      "@type" : "@id"
+    },
+    "visualizerType" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Collection" : {
+      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"
+    }
+  }
+}
