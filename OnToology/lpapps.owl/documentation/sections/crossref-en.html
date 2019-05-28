@@ -4,76 +4,182 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#FilterConfiguration"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration">
+         <a href="#https://w3id.org/def/lpapps#Collection" title="https://w3id.org/def/lpapps#Collection">
+            <span>collection</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">
+            <span>configuration</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">
+            <span>filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">
             <span>filter configuration</span>
          </a>
       </li>
       <li>
-         <a href="#VisualizerConfiguration"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">
+         <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+            title="https://w3id.org/def/lpapps#VisualizerConfiguration">
             <span>visualizer configuration</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="FilterConfiguration">
+   <div class="entity" id="https://w3id.org/def/lpapps#Collection">
+      <h3>collection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#Collection</p>
+      <div class="comment">
+         <span class="markdown">Represents an unordered collection of Filters or FilterGroups</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">filter groups</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#filters" title="https://w3id.org/def/lpapps#filters">filters</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#Configuration">
+      <h3>configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#Configuration</p>
+      <div class="comment">
+         <span class="markdown">Represents an abstract configuration document</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+               title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">author</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#title" title="https://w3id.org/def/lpapps#title">title</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#Filter">
+      <h3>filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#Filter</p>
+      <div class="comment">
+         <span class="markdown">Represents a single Filter object. Defined by a label and value properties</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">label</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#value" title="https://w3id.org/def/lpapps#value">value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#FilterConfiguration">
       <h3>filter configuration<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#FilterConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Represents a document describing the configurations of filters applied to a specific VisualizerConfiguration</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration">configuration</span>
+            <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#state"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state">state</a>
+            <a href="#https://w3id.org/def/lpapps#state" title="https://w3id.org/def/lpapps#state">state</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#filteredBy"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy">filtered by</a>
+            <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">filtered by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="VisualizerConfiguration">
+   <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+      <div class="comment">
+         <span class="markdown">Refers to WebID profile of an author of this configuration</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">author</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#VisualizerConfiguration">
       <h3>visualizer configuration<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#VisualizerConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Represents an application's configuration document and contains parameters necessary for recreating the application inside the LinkedPipes Application platform.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration">configuration</span>
+            <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#backgroundColor"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor">background color</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#conceptIri"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri">concept iri</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#endpoint"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint">endpoint</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#filteredBy"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy">filtered by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#graphIri"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri">graph iri</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#id"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id">id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#visualizerType"
-               title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType">visualizer type</a>
+            <a href="#https://w3id.org/def/lpapps#backgroundColor" title="https://w3id.org/def/lpapps#backgroundColor">background color</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#conceptIri" title="https://w3id.org/def/lpapps#conceptIri">concept iri</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#endpoint" title="https://w3id.org/def/lpapps#endpoint">endpoint</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">filtered by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#graphIri" title="https://w3id.org/def/lpapps#graphIri">graph iri</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#id" title="https://w3id.org/def/lpapps#id">id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#visualizerType" title="https://w3id.org/def/lpapps#visualizerType">visualizer type</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -82,72 +188,71 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#author"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author">
+         <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">
             <span>author</span>
          </a>
       </li>
       <li>
-         <a href="#filterGroups"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups">
+         <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">
             <span>filter groups</span>
          </a>
       </li>
       <li>
-         <a href="#filteredBy"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy">
+         <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">
             <span>filtered by</span>
          </a>
       </li>
       <li>
-         <a href="#filters"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters">
+         <a href="#https://w3id.org/def/lpapps#filters" title="https://w3id.org/def/lpapps#filters">
             <span>filters</span>
          </a>
       </li>
       <li>
-         <a href="#items"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items">
+         <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">
             <span>items</span>
          </a>
       </li>
       <li>
-         <a href="#state"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state">
+         <a href="#https://w3id.org/def/lpapps#state" title="https://w3id.org/def/lpapps#state">
             <span>state</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="author">
+   <div class="entity" id="https://w3id.org/def/lpapps#author">
       <h3>author<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#author</p>
+      <div class="comment">
+         <span class="markdown">Identifies the Author's WebID</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration">configuration</span>
+               <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+               <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="filterGroups">
+   <div class="entity" id="https://w3id.org/def/lpapps#filterGroups">
       <h3>filter groups<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterGroups</p>
+      <div class="comment">
+         <span class="markdown">Identifies the Collection of FilterGroups contained in FilterGroup entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -156,26 +261,27 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState">filter state</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterState">filter state</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection">collection</span>
+               <a href="#https://w3id.org/def/lpapps#Collection" title="https://w3id.org/def/lpapps#Collection">collection</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="filteredBy">
+   <div class="entity" id="https://w3id.org/def/lpapps#filteredBy">
       <h3>filtered by<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filteredBy</p>
+      <div class="comment">
+         <span class="markdown">Identifies relation between the VisualizerConfiguration and FilterConfiguration entities</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -184,26 +290,28 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#FilterConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration">filter configuration</a>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="filters">
+   <div class="entity" id="https://w3id.org/def/lpapps#filters">
       <h3>filters<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filters</p>
+      <div class="comment">
+         <span class="markdown">Identifies the Collection of Filters contained in FilterGroup entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -212,55 +320,53 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup">filter group</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection">collection</span>
+               <a href="#https://w3id.org/def/lpapps#Collection" title="https://w3id.org/def/lpapps#Collection">collection</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="items">
+   <div class="entity" id="https://w3id.org/def/lpapps#items">
       <h3>items<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#items</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection">collection</span>
+               <a href="#https://w3id.org/def/lpapps#Collection" title="https://w3id.org/def/lpapps#Collection">collection</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter">filter</span>
+               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup">filter group</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="state">
+   <div class="entity" id="https://w3id.org/def/lpapps#state">
       <h3>state<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#state</p>
+      <div class="comment">
+         <span class="markdown">Identifies the FilterState of FilterConfiguration entity</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -269,14 +375,12 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#FilterConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration">filter configuration</a>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState">filter state</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterState">filter state</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -286,79 +390,68 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#backgroundColor"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor">
+         <a href="#https://w3id.org/def/lpapps#backgroundColor" title="https://w3id.org/def/lpapps#backgroundColor">
             <span>background color</span>
          </a>
       </li>
       <li>
-         <a href="#conceptIri"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri">
+         <a href="#https://w3id.org/def/lpapps#conceptIri" title="https://w3id.org/def/lpapps#conceptIri">
             <span>concept iri</span>
          </a>
       </li>
       <li>
-         <a href="#enabled"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled">
+         <a href="#https://w3id.org/def/lpapps#enabled" title="https://w3id.org/def/lpapps#enabled">
             <span>enabled</span>
          </a>
       </li>
       <li>
-         <a href="#endpoint"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint">
+         <a href="#https://w3id.org/def/lpapps#endpoint" title="https://w3id.org/def/lpapps#endpoint">
             <span>endpoint</span>
          </a>
       </li>
       <li>
-         <a href="#graphIri"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri">
+         <a href="#https://w3id.org/def/lpapps#graphIri" title="https://w3id.org/def/lpapps#graphIri">
             <span>graph iri</span>
          </a>
       </li>
       <li>
-         <a href="#id"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id">
+         <a href="#https://w3id.org/def/lpapps#id" title="https://w3id.org/def/lpapps#id">
             <span>id</span>
          </a>
       </li>
       <li>
-         <a href="#label"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label">
+         <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">
             <span>label</span>
          </a>
       </li>
       <li>
-         <a href="#title"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title">
+         <a href="#https://w3id.org/def/lpapps#title" title="https://w3id.org/def/lpapps#title">
             <span>title</span>
          </a>
       </li>
       <li>
-         <a href="#value"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value">
+         <a href="#https://w3id.org/def/lpapps#value" title="https://w3id.org/def/lpapps#value">
             <span>value</span>
          </a>
       </li>
       <li>
-         <a href="#visible"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible">
+         <a href="#https://w3id.org/def/lpapps#visible" title="https://w3id.org/def/lpapps#visible">
             <span>visible</span>
          </a>
       </li>
       <li>
-         <a href="#visualizerType"
-            title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType">
+         <a href="#https://w3id.org/def/lpapps#visualizerType" title="https://w3id.org/def/lpapps#visualizerType">
             <span>visualizer type</span>
          </a>
       </li>
    </ul>
-   <div class="entity" id="backgroundColor">
+   <div class="entity" id="https://w3id.org/def/lpapps#backgroundColor">
       <h3>background color<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#backgroundColor</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -367,8 +460,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -378,13 +471,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="conceptIri">
+   <div class="entity" id="https://w3id.org/def/lpapps#conceptIri">
       <h3>concept iri<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#conceptIri</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -393,8 +486,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -404,13 +497,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="enabled">
+   <div class="entity" id="https://w3id.org/def/lpapps#enabled">
       <h3>enabled<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#enabled</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -419,13 +512,11 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup">filter group</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState">filter state</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterState">filter state</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -435,13 +526,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="endpoint">
+   <div class="entity" id="https://w3id.org/def/lpapps#endpoint">
       <h3>endpoint<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#endpoint</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -450,8 +541,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -461,13 +552,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="graphIri">
+   <div class="entity" id="https://w3id.org/def/lpapps#graphIri">
       <h3>graph iri<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#graphIri</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -476,8 +567,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -487,13 +578,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="id">
+   <div class="entity" id="https://w3id.org/def/lpapps#id">
       <h3>id<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#id</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -502,8 +593,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -513,13 +604,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="label">
+   <div class="entity" id="https://w3id.org/def/lpapps#label">
       <h3>label<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#label</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -528,13 +619,11 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter">filter</span>
+               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup">filter group</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -544,13 +633,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="title">
+   <div class="entity" id="https://w3id.org/def/lpapps#title">
       <h3>title<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#title</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -559,8 +648,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration">configuration</span>
+               <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -570,13 +658,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="value">
+   <div class="entity" id="https://w3id.org/def/lpapps#value">
       <h3>value<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#value</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -585,8 +673,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter">filter</span>
+               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -596,13 +683,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="visible">
+   <div class="entity" id="https://w3id.org/def/lpapps#visible">
       <h3>visible<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#visible</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -611,13 +698,11 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup">filter group</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState">filter state</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterState">filter state</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -627,13 +712,13 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="visualizerType">
+   <div class="entity" id="https://w3id.org/def/lpapps#visualizerType">
       <h3>visualizer type<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType</p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#visualizerType</p>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -642,13 +727,12 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState">filter state</span>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterState">filter state</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
-               <a href="#VisualizerConfiguration"
-                  title="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">visualizer configuration</a>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
