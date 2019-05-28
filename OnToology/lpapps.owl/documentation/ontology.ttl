@@ -1,77 +1,88 @@
-@prefix : <http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#> .
+@prefix : <https://w3id.org/def/lpapps#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology> .
+@base <https://w3id.org/def/lpapps> .
 
-<http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology> rdf:type owl:Ontology .
+<https://w3id.org/def/lpapps> rdf:type owl:Ontology ;
+                               rdfs:comment """LinkedPipes Applications OWL ontology
+
+Used for describing Application Configurations in Solid      
+
+Author: Altynbek Orumbayev"""@en ;
+                               rdfs:label "LinkedPipes Applications Ontology"@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author
+###  https://w3id.org/def/lpapps#author
 :author rdf:type owl:ObjectProperty ;
         rdfs:domain :Configuration ;
-        rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+        rdfs:range <http://xmlns.com/foaf/0.1/Person> ;
+        rdfs:comment "Identifies the Author's WebID"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups
+###  https://w3id.org/def/lpapps#filterGroups
 :filterGroups rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :FilterState ;
-              rdfs:range :Collection .
+              rdfs:range :Collection ;
+              rdfs:comment "Identifies the Collection of FilterGroups contained in FilterGroup entity"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy
+###  https://w3id.org/def/lpapps#filteredBy
 :filteredBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :VisualizerConfiguration ;
-            rdfs:range :FilterConfiguration .
+            rdfs:range :FilterConfiguration ;
+            rdfs:comment "Identifies relation between the VisualizerConfiguration and FilterConfiguration entities"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters
+###  https://w3id.org/def/lpapps#filters
 :filters rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain :FilterGroup ;
-         rdfs:range :Collection .
+         rdfs:range :Collection ;
+         rdfs:comment "Identifies the Collection of Filters contained in FilterGroup entity"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items
+###  https://w3id.org/def/lpapps#items
 :items rdf:type owl:ObjectProperty ;
        rdfs:domain :Collection ;
        rdfs:range :Filter ,
                   :FilterGroup .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state
+###  https://w3id.org/def/lpapps#state
 :state rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :FilterConfiguration ;
-       rdfs:range :FilterState .
+       rdfs:range :FilterState ;
+       rdfs:comment "Identifies the FilterState of FilterConfiguration entity"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor
+###  https://w3id.org/def/lpapps#backgroundColor
 :backgroundColor rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :VisualizerConfiguration ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri
+###  https://w3id.org/def/lpapps#conceptIri
 :conceptIri rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :VisualizerConfiguration ;
             rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled
+###  https://w3id.org/def/lpapps#enabled
 :enabled rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:domain :FilterGroup ,
@@ -79,28 +90,28 @@
          rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint
+###  https://w3id.org/def/lpapps#endpoint
 :endpoint rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :VisualizerConfiguration ;
           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri
+###  https://w3id.org/def/lpapps#graphIri
 :graphIri rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :VisualizerConfiguration ;
           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id
+###  https://w3id.org/def/lpapps#id
 :id rdf:type owl:DatatypeProperty ;
     rdfs:subPropertyOf owl:topDataProperty ;
     rdfs:domain :VisualizerConfiguration ;
     rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label
+###  https://w3id.org/def/lpapps#label
 :label rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Filter ,
@@ -108,21 +119,21 @@
        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title
+###  https://w3id.org/def/lpapps#title
 :title rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Configuration ;
        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value
+###  https://w3id.org/def/lpapps#value
 :value rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Filter ;
        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible
+###  https://w3id.org/def/lpapps#visible
 :visible rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:domain :FilterGroup ,
@@ -130,7 +141,7 @@
          rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType
+###  https://w3id.org/def/lpapps#visualizerType
 :visualizerType rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :FilterState ,
@@ -142,38 +153,44 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection
-:Collection rdf:type owl:Class .
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:comment "Refers to WebID profile of an author of this configuration"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration
-:Configuration rdf:type owl:Class .
+###  https://w3id.org/def/lpapps#Collection
+:Collection rdf:type owl:Class ;
+            rdfs:comment "Represents an unordered collection of Filters or FilterGroups"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter
-:Filter rdf:type owl:Class .
+###  https://w3id.org/def/lpapps#Configuration
+:Configuration rdf:type owl:Class ;
+               rdfs:comment "Represents an abstract configuration document"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration
+###  https://w3id.org/def/lpapps#Filter
+:Filter rdf:type owl:Class ;
+        rdfs:comment "Represents a single Filter object. Defined by a label and value properties"@en .
+
+
+###  https://w3id.org/def/lpapps#FilterConfiguration
 :FilterConfiguration rdf:type owl:Class ;
-                     rdfs:subClassOf :Configuration .
+                     rdfs:subClassOf :Configuration ;
+                     rdfs:comment "Represents a document describing the configurations of filters applied to a specific VisualizerConfiguration"@en .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup
+###  https://w3id.org/def/lpapps#FilterGroup
 :FilterGroup rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState
+###  https://w3id.org/def/lpapps#FilterState
 :FilterState rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration
+###  https://w3id.org/def/lpapps#VisualizerConfiguration
 :VisualizerConfiguration rdf:type owl:Class ;
-                         rdfs:subClassOf :Configuration .
-
-
-###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+                         rdfs:subClassOf :Configuration ;
+                         rdfs:comment "Represents an application's configuration document and contains parameters necessary for recreating the application inside the LinkedPipes Application platform."@en .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

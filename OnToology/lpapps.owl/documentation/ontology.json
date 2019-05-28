@@ -1,47 +1,86 @@
 [ {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration",
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to WebID profile of an author of this configuration"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+  "@id" : "https://w3id.org/def/lpapps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "LinkedPipes Applications OWL ontology\n\nUsed for describing Application Configurations in Solid      \n\nAuthor: Altynbek Orumbayev"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LinkedPipes Applications Ontology"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author",
+  "@id" : "https://w3id.org/def/lpapps#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an unordered collection of Filters or FilterGroups"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#Configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an abstract configuration document"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#Filter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a single Filter object. Defined by a label and value properties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#FilterConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a document describing the configurations of filters applied to a specific VisualizerConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/lpapps#Configuration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#FilterGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#FilterState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an application's configuration document and contains parameters necessary for recreating the application inside the LinkedPipes Application platform."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/lpapps#Configuration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#author",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the Author's WebID"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+    "@id" : "https://w3id.org/def/lpapps#Configuration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor",
+  "@id" : "https://w3id.org/def/lpapps#backgroundColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -50,10 +89,10 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri",
+  "@id" : "https://w3id.org/def/lpapps#conceptIri",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -62,12 +101,12 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled",
+  "@id" : "https://w3id.org/def/lpapps#enabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterGroup"
   }, {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    "@id" : "https://w3id.org/def/lpapps#FilterState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -76,10 +115,10 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint",
+  "@id" : "https://w3id.org/def/lpapps#endpoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -88,46 +127,58 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups",
+  "@id" : "https://w3id.org/def/lpapps#filterGroups",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the Collection of FilterGroups contained in FilterGroup entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    "@id" : "https://w3id.org/def/lpapps#FilterState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"
+    "@id" : "https://w3id.org/def/lpapps#Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy",
+  "@id" : "https://w3id.org/def/lpapps#filteredBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies relation between the VisualizerConfiguration and FilterConfiguration entities"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters",
+  "@id" : "https://w3id.org/def/lpapps#filters",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the Collection of Filters contained in FilterGroup entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"
+    "@id" : "https://w3id.org/def/lpapps#Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri",
+  "@id" : "https://w3id.org/def/lpapps#graphIri",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -136,10 +187,10 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id",
+  "@id" : "https://w3id.org/def/lpapps#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -148,23 +199,23 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items",
+  "@id" : "https://w3id.org/def/lpapps#items",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"
+    "@id" : "https://w3id.org/def/lpapps#Collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"
+    "@id" : "https://w3id.org/def/lpapps#Filter"
   }, {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterGroup"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label",
+  "@id" : "https://w3id.org/def/lpapps#label",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"
+    "@id" : "https://w3id.org/def/lpapps#Filter"
   }, {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterGroup"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -173,22 +224,26 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state",
+  "@id" : "https://w3id.org/def/lpapps#state",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the FilterState of FilterConfiguration entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    "@id" : "https://w3id.org/def/lpapps#FilterState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title",
+  "@id" : "https://w3id.org/def/lpapps#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+    "@id" : "https://w3id.org/def/lpapps#Configuration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -197,10 +252,10 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value",
+  "@id" : "https://w3id.org/def/lpapps#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"
+    "@id" : "https://w3id.org/def/lpapps#Filter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -209,12 +264,12 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible",
+  "@id" : "https://w3id.org/def/lpapps#visible",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterGroup"
   }, {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    "@id" : "https://w3id.org/def/lpapps#FilterState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -223,12 +278,12 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType",
+  "@id" : "https://w3id.org/def/lpapps#visualizerType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+    "@id" : "https://w3id.org/def/lpapps#FilterState"
   }, {
-    "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+    "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -236,7 +291,4 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]

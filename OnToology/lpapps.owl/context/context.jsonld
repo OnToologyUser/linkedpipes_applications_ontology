@@ -1,43 +1,43 @@
 {
   "@context" : {
     "backgroundColor" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor",
+      "@id" : "https://w3id.org/def/lpapps#backgroundColor",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Filter" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"
+      "@id" : "https://w3id.org/def/lpapps#Filter"
     },
     "FilterState" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"
+      "@id" : "https://w3id.org/def/lpapps#FilterState"
     },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
     "label" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label",
+      "@id" : "https://w3id.org/def/lpapps#label",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "author" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author",
+      "@id" : "https://w3id.org/def/lpapps#author",
       "@type" : "@id"
     },
     "conceptIri" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri",
+      "@id" : "https://w3id.org/def/lpapps#conceptIri",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "enabled" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled",
+      "@id" : "https://w3id.org/def/lpapps#enabled",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "id" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id",
+      "@id" : "https://w3id.org/def/lpapps#id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
     "filters" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters",
+      "@id" : "https://w3id.org/def/lpapps#filters",
       "@type" : "@id"
     },
     "topObjectProperty" : {
@@ -45,59 +45,62 @@
       "@type" : "@id"
     },
     "FilterConfiguration" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"
+      "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
     },
     "value" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value",
+      "@id" : "https://w3id.org/def/lpapps#value",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "items" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items",
+      "@id" : "https://w3id.org/def/lpapps#items",
       "@type" : "@id"
     },
     "visible" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible",
+      "@id" : "https://w3id.org/def/lpapps#visible",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "title" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title",
+      "@id" : "https://w3id.org/def/lpapps#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "filterGroups" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups",
+      "@id" : "https://w3id.org/def/lpapps#filterGroups",
       "@type" : "@id"
     },
     "VisualizerConfiguration" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"
+      "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
     },
     "state" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state",
+      "@id" : "https://w3id.org/def/lpapps#state",
       "@type" : "@id"
     },
     "endpoint" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint",
+      "@id" : "https://w3id.org/def/lpapps#endpoint",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "graphIri" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri",
+      "@id" : "https://w3id.org/def/lpapps#graphIri",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "FilterGroup" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"
+      "@id" : "https://w3id.org/def/lpapps#FilterGroup"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Configuration" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"
+      "@id" : "https://w3id.org/def/lpapps#Configuration"
     },
     "filteredBy" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy",
+      "@id" : "https://w3id.org/def/lpapps#filteredBy",
       "@type" : "@id"
     },
     "visualizerType" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType",
+      "@id" : "https://w3id.org/def/lpapps#visualizerType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Collection" : {
-      "@id" : "http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"
+      "@id" : "https://w3id.org/def/lpapps#Collection"
     }
   }
 }
