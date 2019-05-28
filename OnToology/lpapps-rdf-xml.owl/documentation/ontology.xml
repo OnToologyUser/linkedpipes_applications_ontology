@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#"
+     xml:base="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#author">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filterGroups">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filteredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#filters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#items">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#state">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#backgroundColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#conceptIri">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#enabled">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#endpoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#graphIri">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#label">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visible">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#visualizerType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Collection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Filter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#FilterState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#VisualizerConfiguration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aorumbayev/ontologies/2019/4/lpapps-ontology#Configuration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
