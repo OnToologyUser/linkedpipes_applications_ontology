@@ -64,15 +64,8 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#items">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionGroup"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/def/lpapps#FilterOption"/>
-                    <rdf:Description rdf:about="https://w3id.org/def/lpapps#FilterOptionGroup"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionList"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOption"/>
     </owl:ObjectProperty>
     
 
@@ -102,7 +95,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#selectedOptions">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Filter"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOptionGroup"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOptionList"/>
     </owl:ObjectProperty>
     
 
@@ -285,9 +278,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
     <!-- https://w3id.org/def/lpapps#FilterGroup -->
 
-    <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterGroup">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Group"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterGroup"/>
     
 
 
@@ -300,19 +291,9 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/def/lpapps#FilterOptionGroup -->
+    <!-- https://w3id.org/def/lpapps#FilterOptionList -->
 
-    <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterOptionGroup">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Group"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/lpapps#Group -->
-
-    <owl:Class rdf:about="https://w3id.org/def/lpapps#Group">
-        <rdfs:comment xml:lang="en">Represents an unordered collection of Filters or FilterGroups</rdfs:comment>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterOptionList"/>
     
 
 
