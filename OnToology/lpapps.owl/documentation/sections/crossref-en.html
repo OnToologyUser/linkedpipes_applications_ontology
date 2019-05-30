@@ -39,8 +39,18 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">
+            <span>nodes filter</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
             <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">
+            <span>scheme filter</span>
          </a>
       </li>
       <li>
@@ -94,18 +104,13 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+            <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">nodes filter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">scheme filter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">label</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#selectedOptions" title="https://w3id.org/def/lpapps#selectedOptions">selected options</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <a href="#https://w3id.org/def/lpapps#selectedOptions" title="https://w3id.org/def/lpapps#selectedOptions">selected options</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -129,11 +134,14 @@ This section provides details for each class and property defined by [Ontology N
          <dt>has sub-classes</dt>
          <dd>
             <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/def/lpapps#enabled" title="https://w3id.org/def/lpapps#enabled">enabled</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">filter groups</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">label</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#visible" title="https://w3id.org/def/lpapps#visible">visible</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -157,6 +165,17 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#https://w3id.org/def/lpapps#Group" title="https://w3id.org/def/lpapps#Group">group</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">nodes filter</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#schemeFilter" title="https://w3id.org/def/lpapps#schemeFilter">scheme filter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">filter groups</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/lpapps#FilterOption">
@@ -172,13 +191,18 @@ This section provides details for each class and property defined by [Ontology N
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/def/lpapps#uri" title="https://w3id.org/def/lpapps#uri">uri</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -194,6 +218,11 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#https://w3id.org/def/lpapps#Group" title="https://w3id.org/def/lpapps#Group">group</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -219,9 +248,24 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#FilterOptionGroup" title="https://w3id.org/def/lpapps#FilterOptionGroup">filter option group</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#NodesFilter">
+      <h3>nodes filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#NodesFilter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">nodes filter</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -240,6 +284,26 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in range of</dt>
          <dd>
             <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">author</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#SchemeFilter">
+      <h3>scheme filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#SchemeFilter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#schemeFilter" title="https://w3id.org/def/lpapps#schemeFilter">scheme filter</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -283,6 +347,11 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">
+            <span>filter groups</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">
             <span>filtered by</span>
          </a>
@@ -290,6 +359,16 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">
             <span>items</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">
+            <span>nodes filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#schemeFilter" title="https://w3id.org/def/lpapps#schemeFilter">
+            <span>scheme filter</span>
          </a>
       </li>
       <li>
@@ -310,6 +389,10 @@ This section provides details for each class and property defined by [Ontology N
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
@@ -318,6 +401,32 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has range</dt>
             <dd>
                <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filterGroups">
+      <h3>filter groups<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterGroups</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterGroup" title="https://w3id.org/def/lpapps#FilterGroup">filter group</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -362,14 +471,70 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://w3id.org/def/lpapps#items</p>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/lpapps#Group" title="https://w3id.org/def/lpapps#Group">group</a>
+               <a href="#https://w3id.org/def/lpapps#FilterOptionGroup" title="https://w3id.org/def/lpapps#FilterOptionGroup">filter option group</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#nodesFilter">
+      <h3>nodes filter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#nodesFilter</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterGroup" title="https://w3id.org/def/lpapps#FilterGroup">filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">nodes filter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#schemeFilter">
+      <h3>scheme filter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#schemeFilter</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterGroup" title="https://w3id.org/def/lpapps#FilterGroup">filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">scheme filter</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -384,6 +549,10 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> https://w3id.org/def/lpapps#selectedOptions</p>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
@@ -657,7 +826,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

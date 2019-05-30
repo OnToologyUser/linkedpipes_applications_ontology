@@ -33,9 +33,21 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#author">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Configuration"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:comment xml:lang="en">Identifies the Author&apos;s WebID</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#filterGroups -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#filterGroups">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterGroup"/>
     </owl:ObjectProperty>
     
 
@@ -56,8 +68,31 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#items">
-        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Group"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#Filter"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionGroup"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#nodesFilter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#nodesFilter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterGroup"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#NodesFilter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#schemeFilter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#schemeFilter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterGroup"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#SchemeFilter"/>
     </owl:ObjectProperty>
     
 
@@ -66,6 +101,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#selectedOptions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Filter"/>
         <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOptionGroup"/>
     </owl:ObjectProperty>
@@ -166,7 +202,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#label">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Filter"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterConfiguration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -279,7 +315,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
 
     <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterOption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Filter"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#FilterConfiguration"/>
         <rdfs:comment>Represents one of many instances of a selected filtering option for a Filter instance</rdfs:comment>
     </owl:Class>
     
@@ -299,6 +335,24 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/def/lpapps#Group">
         <rdfs:comment xml:lang="en">Represents an unordered collection of Filters or FilterGroups</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#NodesFilter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/lpapps#NodesFilter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Filter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#SchemeFilter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/lpapps#SchemeFilter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Filter"/>
     </owl:Class>
     
 

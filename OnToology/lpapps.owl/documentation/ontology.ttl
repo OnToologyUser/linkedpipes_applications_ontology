@@ -20,9 +20,17 @@ Author: Altynbek Orumbayev"""@en ;
 
 ###  https://w3id.org/def/lpapps#author
 :author rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
         rdfs:domain :Configuration ;
         rdfs:range <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:comment "Identifies the Author's WebID"@en .
+
+
+###  https://w3id.org/def/lpapps#filterGroups
+:filterGroups rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :FilterConfiguration ;
+              rdfs:range :FilterGroup .
 
 
 ###  https://w3id.org/def/lpapps#filteredBy
@@ -35,12 +43,28 @@ Author: Altynbek Orumbayev"""@en ;
 
 ###  https://w3id.org/def/lpapps#items
 :items rdf:type owl:ObjectProperty ;
-       rdfs:domain :Group ;
-       rdfs:range :Filter .
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:domain :FilterOptionGroup ;
+       rdfs:range :FilterOption .
+
+
+###  https://w3id.org/def/lpapps#nodesFilter
+:nodesFilter rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :FilterGroup ;
+             rdfs:range :NodesFilter .
+
+
+###  https://w3id.org/def/lpapps#schemeFilter
+:schemeFilter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :FilterGroup ;
+              rdfs:range :SchemeFilter .
 
 
 ###  https://w3id.org/def/lpapps#selectedOptions
 :selectedOptions rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain :Filter ;
                  rdfs:range :FilterOptionGroup .
 
@@ -101,7 +125,7 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#label
 :label rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Filter ;
+       rdfs:domain :FilterConfiguration ;
        rdfs:range xsd:string .
 
 
@@ -166,7 +190,7 @@ Author: Altynbek Orumbayev"""@en ;
 
 ###  https://w3id.org/def/lpapps#FilterOption
 :FilterOption rdf:type owl:Class ;
-              rdfs:subClassOf :Filter ;
+              rdfs:subClassOf :FilterConfiguration ;
               rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
 
 
@@ -178,6 +202,16 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#Group
 :Group rdf:type owl:Class ;
        rdfs:comment "Represents an unordered collection of Filters or FilterGroups"@en .
+
+
+###  https://w3id.org/def/lpapps#NodesFilter
+:NodesFilter rdf:type owl:Class ;
+             rdfs:subClassOf :Filter .
+
+
+###  https://w3id.org/def/lpapps#SchemeFilter
+:SchemeFilter rdf:type owl:Class ;
+              rdfs:subClassOf :Filter .
 
 
 ###  https://w3id.org/def/lpapps#VisualizerConfiguration
