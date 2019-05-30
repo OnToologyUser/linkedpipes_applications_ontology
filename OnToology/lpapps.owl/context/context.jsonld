@@ -11,9 +11,6 @@
     "Filter" : {
       "@id" : "https://w3id.org/def/lpapps#Filter"
     },
-    "FilterState" : {
-      "@id" : "https://w3id.org/def/lpapps#FilterState"
-    },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
@@ -23,6 +20,14 @@
     },
     "author" : {
       "@id" : "https://w3id.org/def/lpapps#author",
+      "@type" : "@id"
+    },
+    "uri" : {
+      "@id" : "https://w3id.org/def/lpapps#uri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "selectedOptions" : {
+      "@id" : "https://w3id.org/def/lpapps#selectedOptions",
       "@type" : "@id"
     },
     "conceptIri" : {
@@ -40,9 +45,8 @@
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
-    "filters" : {
-      "@id" : "https://w3id.org/def/lpapps#filters",
-      "@type" : "@id"
+    "FilterOption" : {
+      "@id" : "https://w3id.org/def/lpapps#FilterOption"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -63,20 +67,15 @@
       "@id" : "https://w3id.org/def/lpapps#visible",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
+    "FilterOptionGroup" : {
+      "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
+    },
     "title" : {
       "@id" : "https://w3id.org/def/lpapps#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "filterGroups" : {
-      "@id" : "https://w3id.org/def/lpapps#filterGroups",
-      "@type" : "@id"
-    },
     "VisualizerConfiguration" : {
       "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
-    },
-    "state" : {
-      "@id" : "https://w3id.org/def/lpapps#state",
-      "@type" : "@id"
     },
     "endpoint" : {
       "@id" : "https://w3id.org/def/lpapps#endpoint",
@@ -92,6 +91,9 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
+    "Group" : {
+      "@id" : "https://w3id.org/def/lpapps#Group"
+    },
     "Configuration" : {
       "@id" : "https://w3id.org/def/lpapps#Configuration"
     },
@@ -102,9 +104,6 @@
     "visualizerType" : {
       "@id" : "https://w3id.org/def/lpapps#visualizerType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "Collection" : {
-      "@id" : "https://w3id.org/def/lpapps#Collection"
     }
   }
 }
