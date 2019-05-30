@@ -65,7 +65,14 @@ Author: Altynbek Orumbayev</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#items">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionGroup"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOption"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/def/lpapps#FilterOption"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/lpapps#FilterOptionGroup"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
