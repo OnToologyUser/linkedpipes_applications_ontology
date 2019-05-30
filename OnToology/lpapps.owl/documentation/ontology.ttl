@@ -97,6 +97,12 @@ Author: Altynbek Orumbayev"""@en ;
           rdfs:range xsd:string .
 
 
+###  https://w3id.org/def/lpapps#etlExecutionIri
+:etlExecutionIri rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :VisualizerConfiguration ;
+                 rdfs:range xsd:string .
+
+
 ###  https://w3id.org/def/lpapps#graphIri
 :graphIri rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
