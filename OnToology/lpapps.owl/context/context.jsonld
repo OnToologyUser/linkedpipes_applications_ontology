@@ -4,6 +4,10 @@
       "@id" : "https://w3id.org/def/lpapps#backgroundColor",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "etlExecutionIri" : {
+      "@id" : "https://w3id.org/def/lpapps#etlExecutionIri",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Filter" : {
       "@id" : "https://w3id.org/def/lpapps#Filter"
     },
