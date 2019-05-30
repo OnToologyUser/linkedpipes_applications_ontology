@@ -1,8 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:VisualizerConfiguration" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
-	"base:FilterConfiguration" -> "base:Configuration" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "base:VisualizerConfiguration" "base:Group" "base:FilterOptionGroup" "base:FilterOption" "base:FilterGroup" "base:FilterConfiguration" "base:Filter" "base:Configuration" ; /*classes style*/
+	"base:FilterOptionGroup" -> "base:Group" [ label = "rdfs:subClassOf" ];
+	"base:FilterGroup" -> "base:Group" [ label = "rdfs:subClassOf" ];
 	"base:VisualizerConfiguration" -> "base:Configuration" [ label = "rdfs:subClassOf" ];
+	"base:FilterConfiguration" -> "base:Configuration" [ label = "rdfs:subClassOf" ];
+	"base:FilterOption" -> "base:Filter" [ label = "rdfs:subClassOf" ];
+	"base:Filter" -> "base:FilterConfiguration" [ label = "rdfs:subClassOf" ];
 
 }

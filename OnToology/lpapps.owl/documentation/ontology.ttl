@@ -25,14 +25,6 @@ Author: Altynbek Orumbayev"""@en ;
         rdfs:comment "Identifies the Author's WebID"@en .
 
 
-###  https://w3id.org/def/lpapps#filterGroups
-:filterGroups rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:domain :FilterState ;
-              rdfs:range :Collection ;
-              rdfs:comment "Identifies the Collection of FilterGroups contained in FilterGroup entity"@en .
-
-
 ###  https://w3id.org/def/lpapps#filteredBy
 :filteredBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
@@ -41,27 +33,16 @@ Author: Altynbek Orumbayev"""@en ;
             rdfs:comment "Identifies relation between the VisualizerConfiguration and FilterConfiguration entities"@en .
 
 
-###  https://w3id.org/def/lpapps#filters
-:filters rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :FilterGroup ;
-         rdfs:range :Collection ;
-         rdfs:comment "Identifies the Collection of Filters contained in FilterGroup entity"@en .
-
-
 ###  https://w3id.org/def/lpapps#items
 :items rdf:type owl:ObjectProperty ;
-       rdfs:domain :Collection ;
-       rdfs:range :Filter ,
-                  :FilterGroup .
+       rdfs:domain :Group ;
+       rdfs:range :Filter .
 
 
-###  https://w3id.org/def/lpapps#state
-:state rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf owl:topObjectProperty ;
-       rdfs:domain :FilterConfiguration ;
-       rdfs:range :FilterState ;
-       rdfs:comment "Identifies the FilterState of FilterConfiguration entity"@en .
+###  https://w3id.org/def/lpapps#selectedOptions
+:selectedOptions rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Filter ;
+                 rdfs:range :FilterOptionGroup .
 
 
 #################################################################
@@ -85,8 +66,7 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#enabled
 :enabled rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :FilterGroup ,
-                     :FilterState ;
+         rdfs:domain :FilterGroup ;
          rdfs:range xsd:boolean .
 
 
@@ -99,6 +79,7 @@ Author: Altynbek Orumbayev"""@en ;
 
 ###  https://w3id.org/def/lpapps#etlExecutionIri
 :etlExecutionIri rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :VisualizerConfiguration ;
                  rdfs:range xsd:string .
 
@@ -120,8 +101,7 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#label
 :label rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :Filter ,
-                   :FilterGroup ;
+       rdfs:domain :Filter ;
        rdfs:range xsd:string .
 
 
@@ -130,6 +110,13 @@ Author: Altynbek Orumbayev"""@en ;
        rdfs:subPropertyOf owl:topDataProperty ;
        rdfs:domain :Configuration ;
        rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/lpapps#uri
+:uri rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
+     rdfs:domain :FilterOption ;
+     rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/lpapps#value
@@ -142,16 +129,14 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#visible
 :visible rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :FilterGroup ,
-                     :FilterState ;
+         rdfs:domain :FilterConfiguration ;
          rdfs:range xsd:boolean .
 
 
 ###  https://w3id.org/def/lpapps#visualizerType
 :visualizerType rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :FilterState ,
-                            :VisualizerConfiguration ;
+                rdfs:domain :VisualizerConfiguration ;
                 rdfs:range xsd:string .
 
 
@@ -164,11 +149,6 @@ Author: Altynbek Orumbayev"""@en ;
                                    rdfs:comment "Refers to WebID profile of an author of this configuration"@en .
 
 
-###  https://w3id.org/def/lpapps#Collection
-:Collection rdf:type owl:Class ;
-            rdfs:comment "Represents an unordered collection of Filters or FilterGroups"@en .
-
-
 ###  https://w3id.org/def/lpapps#Configuration
 :Configuration rdf:type owl:Class ;
                rdfs:comment "Represents an abstract configuration document"@en .
@@ -176,6 +156,7 @@ Author: Altynbek Orumbayev"""@en ;
 
 ###  https://w3id.org/def/lpapps#Filter
 :Filter rdf:type owl:Class ;
+        rdfs:subClassOf :FilterConfiguration ;
         rdfs:comment "Represents a single Filter object. Defined by a label and value properties"@en .
 
 
@@ -186,11 +167,24 @@ Author: Altynbek Orumbayev"""@en ;
 
 
 ###  https://w3id.org/def/lpapps#FilterGroup
-:FilterGroup rdf:type owl:Class .
+:FilterGroup rdf:type owl:Class ;
+             rdfs:subClassOf :Group .
 
 
-###  https://w3id.org/def/lpapps#FilterState
-:FilterState rdf:type owl:Class .
+###  https://w3id.org/def/lpapps#FilterOption
+:FilterOption rdf:type owl:Class ;
+              rdfs:subClassOf :Filter ;
+              rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
+
+
+###  https://w3id.org/def/lpapps#FilterOptionGroup
+:FilterOptionGroup rdf:type owl:Class ;
+                   rdfs:subClassOf :Group .
+
+
+###  https://w3id.org/def/lpapps#Group
+:Group rdf:type owl:Class ;
+       rdfs:comment "Represents an unordered collection of Filters or FilterGroups"@en .
 
 
 ###  https://w3id.org/def/lpapps#VisualizerConfiguration
