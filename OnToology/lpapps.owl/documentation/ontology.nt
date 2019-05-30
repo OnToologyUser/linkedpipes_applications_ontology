@@ -35,7 +35,6 @@
 <https://w3id.org/def/lpapps#items> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/def/lpapps#items> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#FilterOptionList> .
 <https://w3id.org/def/lpapps#items> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/lpapps#FilterOption> .
-<https://w3id.org/def/lpapps#items> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/lpapps#FilterOptionList> .
 # 
 # https://w3id.org/def/lpapps#nodesFilter
 <https://w3id.org/def/lpapps#nodesFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
