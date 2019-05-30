@@ -1,5 +1,9 @@
 {
   "@context" : {
+    "schemeFilter" : {
+      "@id" : "https://w3id.org/def/lpapps#schemeFilter",
+      "@type" : "@id"
+    },
     "backgroundColor" : {
       "@id" : "https://w3id.org/def/lpapps#backgroundColor",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -21,6 +25,9 @@
     "author" : {
       "@id" : "https://w3id.org/def/lpapps#author",
       "@type" : "@id"
+    },
+    "NodesFilter" : {
+      "@id" : "https://w3id.org/def/lpapps#NodesFilter"
     },
     "uri" : {
       "@id" : "https://w3id.org/def/lpapps#uri",
@@ -66,9 +73,16 @@
     "FilterOptionGroup" : {
       "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
     },
+    "SchemeFilter" : {
+      "@id" : "https://w3id.org/def/lpapps#SchemeFilter"
+    },
     "title" : {
       "@id" : "https://w3id.org/def/lpapps#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "filterGroups" : {
+      "@id" : "https://w3id.org/def/lpapps#filterGroups",
+      "@type" : "@id"
     },
     "VisualizerConfiguration" : {
       "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
@@ -95,6 +109,10 @@
     },
     "filteredBy" : {
       "@id" : "https://w3id.org/def/lpapps#filteredBy",
+      "@type" : "@id"
+    },
+    "nodesFilter" : {
+      "@id" : "https://w3id.org/def/lpapps#nodesFilter",
       "@type" : "@id"
     },
     "visualizerType" : {
