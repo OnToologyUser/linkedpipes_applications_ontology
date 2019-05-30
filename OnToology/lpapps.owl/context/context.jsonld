@@ -55,6 +55,9 @@
     "FilterOption" : {
       "@id" : "https://w3id.org/def/lpapps#FilterOption"
     },
+    "FilterOptionList" : {
+      "@id" : "https://w3id.org/def/lpapps#FilterOptionList"
+    },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
@@ -69,9 +72,6 @@
     "visible" : {
       "@id" : "https://w3id.org/def/lpapps#visible",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
-    },
-    "FilterOptionGroup" : {
-      "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
     },
     "SchemeFilter" : {
       "@id" : "https://w3id.org/def/lpapps#SchemeFilter"
@@ -100,9 +100,6 @@
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "Group" : {
-      "@id" : "https://w3id.org/def/lpapps#Group"
     },
     "Configuration" : {
       "@id" : "https://w3id.org/def/lpapps#Configuration"

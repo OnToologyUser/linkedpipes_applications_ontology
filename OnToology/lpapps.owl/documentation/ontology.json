@@ -1,14 +1,4 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/def/lpapps#FilterOption"
-    }, {
-      "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
-    } ]
-  } ]
-}, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -55,10 +45,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/lpapps#FilterGroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/lpapps#Group"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/lpapps#FilterOption",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -69,18 +56,8 @@
     "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/lpapps#Group"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/lpapps#Group",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Represents an unordered collection of Filters or FilterGroups"
-  } ]
+  "@id" : "https://w3id.org/def/lpapps#FilterOptionList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/lpapps#NodesFilter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -235,10 +212,10 @@
   "@id" : "https://w3id.org/def/lpapps#items",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterOptionList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "https://w3id.org/def/lpapps#FilterOption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -286,7 +263,7 @@
     "@id" : "https://w3id.org/def/lpapps#Filter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/lpapps#FilterOptionGroup"
+    "@id" : "https://w3id.org/def/lpapps#FilterOptionList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
