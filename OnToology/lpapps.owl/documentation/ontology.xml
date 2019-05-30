@@ -71,6 +71,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionList"/>
         <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOption"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOptionList"/>
     </owl:ObjectProperty>
     
 
