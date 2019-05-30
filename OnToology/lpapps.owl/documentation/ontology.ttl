@@ -45,7 +45,11 @@ Author: Altynbek Orumbayev"""@en ;
 :items rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :FilterOptionGroup ;
-       rdfs:range :FilterOption .
+       rdfs:range [ rdf:type owl:Class ;
+                    owl:unionOf ( :FilterOption
+                                  :FilterOptionGroup
+                                )
+                  ] .
 
 
 ###  https://w3id.org/def/lpapps#nodesFilter

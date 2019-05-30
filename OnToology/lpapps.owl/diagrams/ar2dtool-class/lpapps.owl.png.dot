@@ -1,7 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:FilterOptionGroup" "base:Filter" "base:SchemeFilter" "http://xmlns.com/foaf/0.1/Person" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:FilterOptionGroup" "base:Filter" "-56065283:16b095bdfc9:-7ffc" "base:SchemeFilter" "http://xmlns.com/foaf/0.1/Person" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:FilterOptionGroup" [ label = "rdf:first" ];
+	"NULL" -> "-56065283:16b095bdfc9:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "base:FilterOption" [ label = "rdf:first" ];
+	"NULL" -> "-56065283:16b095bdfc9:-7ffb" [ label = "owl:unionOf" ];
 	"base:schemeFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:author" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:endpoint" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -25,7 +30,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:FilterOption" -> "xsd:string" [ label = "base:uri" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:backgroundColor" ];
 	"base:Configuration" -> "xsd:string" [ label = "base:title" ];
-	"base:FilterOptionGroup" -> "base:FilterOption" [ label = "base:items" ];
+	"base:FilterOptionGroup" -> "-56065283:16b095bdfc9:-7ffc" [ label = "base:items" ];
 	"base:FilterConfiguration" -> "base:FilterGroup" [ label = "base:filterGroups" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:conceptIri" ];
 	"base:FilterGroup" -> "base:NodesFilter" [ label = "base:nodesFilter" ];
