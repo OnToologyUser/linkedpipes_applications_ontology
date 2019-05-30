@@ -44,12 +44,8 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#items
 :items rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
-       rdfs:domain :FilterOptionGroup ;
-       rdfs:range [ rdf:type owl:Class ;
-                    owl:unionOf ( :FilterOption
-                                  :FilterOptionGroup
-                                )
-                  ] .
+       rdfs:domain :FilterOptionList ;
+       rdfs:range :FilterOption .
 
 
 ###  https://w3id.org/def/lpapps#nodesFilter
@@ -70,7 +66,7 @@ Author: Altynbek Orumbayev"""@en ;
 :selectedOptions rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain :Filter ;
-                 rdfs:range :FilterOptionGroup .
+                 rdfs:range :FilterOptionList .
 
 
 #################################################################
@@ -188,8 +184,7 @@ Author: Altynbek Orumbayev"""@en ;
 
 
 ###  https://w3id.org/def/lpapps#FilterGroup
-:FilterGroup rdf:type owl:Class ;
-             rdfs:subClassOf :Group .
+:FilterGroup rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/lpapps#FilterOption
@@ -198,14 +193,8 @@ Author: Altynbek Orumbayev"""@en ;
               rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
 
 
-###  https://w3id.org/def/lpapps#FilterOptionGroup
-:FilterOptionGroup rdf:type owl:Class ;
-                   rdfs:subClassOf :Group .
-
-
-###  https://w3id.org/def/lpapps#Group
-:Group rdf:type owl:Class ;
-       rdfs:comment "Represents an unordered collection of Filters or FilterGroups"@en .
+###  https://w3id.org/def/lpapps#FilterOptionList
+:FilterOptionList rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/lpapps#NodesFilter
