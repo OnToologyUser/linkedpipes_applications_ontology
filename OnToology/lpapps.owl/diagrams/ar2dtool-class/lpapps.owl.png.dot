@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:Group" "base:FilterOptionGroup" "base:FilterOption" "base:FilterGroup" "base:FilterConfiguration" "base:Filter" "base:Configuration" "http://xmlns.com/foaf/0.1/Person" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:Group" "base:FilterOptionGroup" "base:FilterOption" "base:FilterConfiguration" "base:Filter" "base:Configuration" "http://xmlns.com/foaf/0.1/Person" ; /*classes style*/
 	"base:conceptIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:visualizerType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:title" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -23,7 +23,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:G
 	"base:Filter" -> "xsd:string" [ label = "base:value" ];
 	"base:Group" -> "base:Filter" [ label = "base:items" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:conceptIri" ];
-	"base:FilterGroup" -> "xsd:boolean" [ label = "base:enabled" ];
+	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:enabled" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:graphIri" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:visualizerType" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:etlExecutionIri" ];
