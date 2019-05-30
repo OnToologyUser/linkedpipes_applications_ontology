@@ -55,10 +55,6 @@
     "FilterConfiguration" : {
       "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
     },
-    "value" : {
-      "@id" : "https://w3id.org/def/lpapps#value",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "items" : {
       "@id" : "https://w3id.org/def/lpapps#items",
       "@type" : "@id"
