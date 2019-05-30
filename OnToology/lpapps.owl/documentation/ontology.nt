@@ -57,7 +57,7 @@
 # https://w3id.org/def/lpapps#enabled
 <https://w3id.org/def/lpapps#enabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/lpapps#enabled> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<https://w3id.org/def/lpapps#enabled> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#FilterGroup> .
+<https://w3id.org/def/lpapps#enabled> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#FilterConfiguration> .
 <https://w3id.org/def/lpapps#enabled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # https://w3id.org/def/lpapps#endpoint

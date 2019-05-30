@@ -66,7 +66,7 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#enabled
 :enabled rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :FilterGroup ;
+         rdfs:domain :FilterConfiguration ;
          rdfs:range xsd:boolean .
 
 
