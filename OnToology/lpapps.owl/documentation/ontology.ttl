@@ -45,7 +45,8 @@ Author: Altynbek Orumbayev"""@en ;
 :items rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :FilterOptionList ;
-       rdfs:range :FilterOption .
+       rdfs:range :FilterOption ,
+                  :FilterOptionList .
 
 
 ###  https://w3id.org/def/lpapps#nodesFilter
