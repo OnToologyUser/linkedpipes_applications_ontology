@@ -145,29 +145,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:conceptIri">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="150.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:conceptIri</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subPropertyOf5" source="nid_base:conceptIri" target="nid_owl:topDataProperty">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_base:filteredBy">
          <data key="d0">
             <y:ShapeNode>
@@ -180,7 +157,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf6" source="nid_base:filteredBy" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf5" source="nid_base:filteredBy" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -203,7 +180,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf7" source="nid_base:filterGroups" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf6" source="nid_base:filterGroups" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -226,7 +203,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf8" source="nid_base:selectedOptions" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf7" source="nid_base:selectedOptions" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -249,7 +226,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf9" source="nid_base:backgroundColor" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf8" source="nid_base:backgroundColor" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -272,7 +249,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf10" source="nid_base:id" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf9" source="nid_base:id" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -295,7 +272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf11" source="nid_base:etlExecutionIri" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf10" source="nid_base:etlExecutionIri" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -318,7 +295,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf12" source="nid_base:items" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf11" source="nid_base:items" target="nid_owl:topObjectProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -341,7 +318,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf13" source="nid_base:enabled" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf12" source="nid_base:enabled" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -352,19 +329,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:uri">
+      <node id="nid_base:applicationData">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="80.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:uri</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:applicationData</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf14" source="nid_base:uri" target="nid_owl:topDataProperty">
+    <edge id="eid_rdfs:subPropertyOf13" source="nid_base:applicationData" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -387,7 +364,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf15" source="nid_base:nodesFilter" target="nid_owl:topObjectProperty">
+    <edge id="eid_rdfs:subPropertyOf14" source="nid_base:nodesFilter" target="nid_owl:topObjectProperty">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_base:uri">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="80.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:uri</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subPropertyOf15" source="nid_base:uri" target="nid_owl:topDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -617,17 +617,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:conceptIri25" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:conceptIri</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_base:NodesFilter">
          <data key="d0">
             <y:ShapeNode>
@@ -640,7 +629,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:nodesFilter26" source="nid_base:FilterGroup" target="nid_base:NodesFilter">
+    <edge id="eid_base:nodesFilter25" source="nid_base:FilterGroup" target="nid_base:NodesFilter">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -663,7 +652,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:enabled27" source="nid_base:FilterConfiguration" target="nid_xsd:boolean">
+    <edge id="eid_base:enabled26" source="nid_base:FilterConfiguration" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -686,7 +675,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:schemeFilter28" source="nid_base:FilterGroup" target="nid_base:SchemeFilter">
+    <edge id="eid_base:schemeFilter27" source="nid_base:FilterGroup" target="nid_base:SchemeFilter">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -697,7 +686,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:graphIri29" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:graphIri28" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -708,7 +697,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:visualizerType30" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:visualizerType29" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -719,7 +708,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:etlExecutionIri31" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:etlExecutionIri30" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -730,7 +719,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:label32" source="nid_base:FilterConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:label31" source="nid_base:FilterConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -741,7 +730,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:endpoint33" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:endpoint32" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -752,7 +741,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:id34" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+    <edge id="eid_base:id33" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -775,12 +764,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:selectedOptions35" source="nid_base:Filter" target="nid_base:FilterOptionList">
+    <edge id="eid_base:selectedOptions34" source="nid_base:Filter" target="nid_base:FilterOptionList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:selectedOptions</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_base:applicationData35" source="nid_base:VisualizerConfiguration" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:applicationData</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

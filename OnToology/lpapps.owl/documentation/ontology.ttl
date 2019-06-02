@@ -73,18 +73,18 @@ Author: Altynbek Orumbayev"""@en ;
 #    Data properties
 #################################################################
 
-###  https://w3id.org/def/lpapps#backgroundColor
-:backgroundColor rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/def/lpapps#applicationData
+:applicationData rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :VisualizerConfiguration ;
                  rdfs:range xsd:string .
 
 
-###  https://w3id.org/def/lpapps#conceptIri
-:conceptIri rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf owl:topDataProperty ;
-            rdfs:domain :VisualizerConfiguration ;
-            rdfs:range xsd:string .
+###  https://w3id.org/def/lpapps#backgroundColor
+:backgroundColor rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :VisualizerConfiguration ;
+                 rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/lpapps#enabled

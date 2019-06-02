@@ -18,6 +18,10 @@
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
+    "applicationData" : {
+      "@id" : "https://w3id.org/def/lpapps#applicationData",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "label" : {
       "@id" : "https://w3id.org/def/lpapps#label",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -36,10 +40,6 @@
     "selectedOptions" : {
       "@id" : "https://w3id.org/def/lpapps#selectedOptions",
       "@type" : "@id"
-    },
-    "conceptIri" : {
-      "@id" : "https://w3id.org/def/lpapps#conceptIri",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "enabled" : {
       "@id" : "https://w3id.org/def/lpapps#enabled",
