@@ -120,10 +120,10 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/def/lpapps#backgroundColor -->
+    <!-- https://w3id.org/def/lpapps#applicationData -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#backgroundColor">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#applicationData">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#VisualizerConfiguration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -131,10 +131,10 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/def/lpapps#conceptIri -->
+    <!-- https://w3id.org/def/lpapps#backgroundColor -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#conceptIri">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#backgroundColor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#VisualizerConfiguration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
