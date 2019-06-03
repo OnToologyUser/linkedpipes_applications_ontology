@@ -65,6 +65,10 @@
     "FilterConfiguration" : {
       "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
     },
+    "published" : {
+      "@id" : "https://w3id.org/def/lpapps#published",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "items" : {
       "@id" : "https://w3id.org/def/lpapps#items",
       "@type" : "@id"

@@ -40,5 +40,6 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:applicationData" ];
 	"base:Configuration" -> "http://xmlns.com/foaf/0.1/Person" [ label = "base:author" ];
 	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:visible" ];
+	"base:Configuration" -> "xsd:dateTime" [ label = "base:published" ];
 
 }
