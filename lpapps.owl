@@ -131,6 +131,16 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/def/lpapps#configurationId -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#configurationId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#VisualizerConfiguration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/def/lpapps#enabled -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#enabled">
@@ -164,16 +174,6 @@ Author: Altynbek Orumbayev</rdfs:comment>
     <!-- https://w3id.org/def/lpapps#graphIri -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#graphIri">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#VisualizerConfiguration"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/lpapps#id -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/lpapps#id">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#VisualizerConfiguration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
