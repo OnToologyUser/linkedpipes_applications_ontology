@@ -11,9 +11,9 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:filterGroups" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:selectedOptions" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:backgroundColor" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"base:id" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:etlExecutionIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:items" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:configurationId" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:enabled" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:applicationData" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:nodesFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
@@ -35,7 +35,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:etlExecutionIri" ];
 	"base:FilterConfiguration" -> "xsd:string" [ label = "base:label" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:endpoint" ];
-	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:id" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:configurationId" ];
 	"base:Filter" -> "base:FilterOptionList" [ label = "base:selectedOptions" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:applicationData" ];
 	"base:Configuration" -> "http://xmlns.com/foaf/0.1/Person" [ label = "base:author" ];
