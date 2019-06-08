@@ -18,6 +18,10 @@
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
+    "filterType" : {
+      "@id" : "https://w3id.org/def/lpapps#filterType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "applicationData" : {
       "@id" : "https://w3id.org/def/lpapps#applicationData",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -90,10 +94,6 @@
     },
     "VisualizerConfiguration" : {
       "@id" : "https://w3id.org/def/lpapps#VisualizerConfiguration"
-    },
-    "filterGroupType" : {
-      "@id" : "https://w3id.org/def/lpapps#filterGroupType",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "endpoint" : {
       "@id" : "https://w3id.org/def/lpapps#endpoint",
