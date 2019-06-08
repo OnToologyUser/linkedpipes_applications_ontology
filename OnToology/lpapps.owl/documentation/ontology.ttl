@@ -87,6 +87,13 @@ Author: Altynbek Orumbayev"""@en ;
                  rdfs:range xsd:string .
 
 
+###  https://w3id.org/def/lpapps#configurationId
+:configurationId rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :VisualizerConfiguration ;
+                 rdfs:range xsd:string .
+
+
 ###  https://w3id.org/def/lpapps#enabled
 :enabled rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
@@ -113,13 +120,6 @@ Author: Altynbek Orumbayev"""@en ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :VisualizerConfiguration ;
           rdfs:range xsd:string .
-
-
-###  https://w3id.org/def/lpapps#id
-:id rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf owl:topDataProperty ;
-    rdfs:domain :VisualizerConfiguration ;
-    rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/lpapps#label
