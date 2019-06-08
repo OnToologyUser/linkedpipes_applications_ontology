@@ -21,11 +21,13 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:title" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:visualizerType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:visible" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filterGroupType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:VisualizerConfiguration" -> "base:FilterConfiguration" [ label = "base:filteredBy" ];
 	"base:FilterOption" -> "xsd:string" [ label = "base:uri" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:backgroundColor" ];
 	"base:Configuration" -> "xsd:string" [ label = "base:title" ];
 	"base:FilterOptionList" -> "base:FilterOption" [ label = "base:items" ];
+	"base:Filter" -> "xsd:string" [ label = "base:filterGroupType" ];
 	"base:FilterConfiguration" -> "base:FilterGroup" [ label = "base:filterGroups" ];
 	"base:FilterGroup" -> "base:NodesFilter" [ label = "base:nodesFilter" ];
 	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:enabled" ];
