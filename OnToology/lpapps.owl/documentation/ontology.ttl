@@ -115,11 +115,11 @@ Author: Altynbek Orumbayev"""@en ;
                  rdfs:range xsd:string .
 
 
-###  https://w3id.org/def/lpapps#filterGroupType
-:filterGroupType rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain :Filter ;
-                 rdfs:range xsd:string .
+###  https://w3id.org/def/lpapps#filterType
+:filterType rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Filter ;
+            rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/lpapps#graphIri
