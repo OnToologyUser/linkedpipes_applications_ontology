@@ -55,18 +55,18 @@ Author: Altynbek Orumbayev"""@en ;
              rdfs:range :NodesFilter .
 
 
+###  https://w3id.org/def/lpapps#options
+:options rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Filter ;
+         rdfs:range :FilterOptionList .
+
+
 ###  https://w3id.org/def/lpapps#schemeFilter
 :schemeFilter rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :FilterGroup ;
               rdfs:range :SchemeFilter .
-
-
-###  https://w3id.org/def/lpapps#selectedOptions
-:selectedOptions rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty ;
-                 rdfs:domain :Filter ;
-                 rdfs:range :FilterOptionList .
 
 
 #################################################################
@@ -85,6 +85,13 @@ Author: Altynbek Orumbayev"""@en ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :VisualizerConfiguration ;
                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/lpapps#checked
+:checked rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :FilterOption ;
+         rdfs:range xsd:boolean .
 
 
 ###  https://w3id.org/def/lpapps#configurationId
