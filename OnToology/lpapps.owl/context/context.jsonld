@@ -41,10 +41,6 @@
       "@id" : "https://w3id.org/def/lpapps#uri",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "selectedOptions" : {
-      "@id" : "https://w3id.org/def/lpapps#selectedOptions",
-      "@type" : "@id"
-    },
     "enabled" : {
       "@id" : "https://w3id.org/def/lpapps#enabled",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -109,8 +105,16 @@
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
+    "options" : {
+      "@id" : "https://w3id.org/def/lpapps#options",
+      "@type" : "@id"
+    },
     "Configuration" : {
       "@id" : "https://w3id.org/def/lpapps#Configuration"
+    },
+    "checked" : {
+      "@id" : "https://w3id.org/def/lpapps#checked",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "filteredBy" : {
       "@id" : "https://w3id.org/def/lpapps#filteredBy",
