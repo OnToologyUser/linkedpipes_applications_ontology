@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:FilterOptionList" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:Filter" "base:SchemeFilter" "http://xmlns.com/foaf/0.1/Person" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:SchemeFilter" "base:NodesFilter" "base:FilterOption" "base:FilterGroup" "base:FilterConfiguration" "base:Filter" "base:Configuration" "http://xmlns.com/foaf/0.1/Person" ; /*classes style*/
 	"base:selected" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:schemeFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:author" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
@@ -39,7 +39,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:configurationId" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:applicationData" ];
 	"base:Configuration" -> "http://xmlns.com/foaf/0.1/Person" [ label = "base:author" ];
-	"base:FilterOptionList" -> "base:FilterOption" [ label = "base:options" ];
+	"base:Filter" -> "base:FilterOption" [ label = "base:options" ];
 	"base:FilterOption" -> "xsd:boolean" [ label = "base:selected" ];
 	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:visible" ];
 	"base:Configuration" -> "xsd:dateTime" [ label = "base:published" ];

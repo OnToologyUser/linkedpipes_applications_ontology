@@ -56,9 +56,6 @@
     "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/lpapps#FilterOptionList",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/def/lpapps#NodesFilter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -248,7 +245,7 @@
   "@id" : "https://w3id.org/def/lpapps#options",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/lpapps#FilterOptionList"
+    "@id" : "https://w3id.org/def/lpapps#Filter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/lpapps#FilterOption"
