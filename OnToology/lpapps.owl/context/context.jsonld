@@ -12,6 +12,10 @@
       "@id" : "https://w3id.org/def/lpapps#etlExecutionIri",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "selected" : {
+      "@id" : "https://w3id.org/def/lpapps#selected",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
     "Filter" : {
       "@id" : "https://w3id.org/def/lpapps#Filter"
     },
@@ -69,10 +73,6 @@
       "@id" : "https://w3id.org/def/lpapps#published",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "items" : {
-      "@id" : "https://w3id.org/def/lpapps#items",
-      "@type" : "@id"
-    },
     "visible" : {
       "@id" : "https://w3id.org/def/lpapps#visible",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -111,10 +111,6 @@
     },
     "Configuration" : {
       "@id" : "https://w3id.org/def/lpapps#Configuration"
-    },
-    "checked" : {
-      "@id" : "https://w3id.org/def/lpapps#checked",
-      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "filteredBy" : {
       "@id" : "https://w3id.org/def/lpapps#filteredBy",
