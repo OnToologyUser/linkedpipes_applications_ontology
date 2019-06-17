@@ -51,7 +51,7 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#options
 :options rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :FilterOptionList ;
+         rdfs:domain :Filter ;
          rdfs:range :FilterOption .
 
 
@@ -204,10 +204,6 @@ Author: Altynbek Orumbayev"""@en ;
 :FilterOption rdf:type owl:Class ;
               rdfs:subClassOf :FilterConfiguration ;
               rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
-
-
-###  https://w3id.org/def/lpapps#FilterOptionList
-:FilterOptionList rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/lpapps#NodesFilter

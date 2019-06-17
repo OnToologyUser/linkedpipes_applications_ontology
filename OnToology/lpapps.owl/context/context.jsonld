@@ -59,9 +59,6 @@
       "@id" : "https://w3id.org/def/lpapps#configurationId",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "FilterOptionList" : {
-      "@id" : "https://w3id.org/def/lpapps#FilterOptionList"
-    },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"

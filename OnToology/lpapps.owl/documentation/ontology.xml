@@ -80,7 +80,7 @@ Author: Altynbek Orumbayev</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#options">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#FilterOptionList"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#Filter"/>
         <rdfs:range rdf:resource="https://w3id.org/def/lpapps#FilterOption"/>
     </owl:ObjectProperty>
     
@@ -337,13 +337,6 @@ Author: Altynbek Orumbayev</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#FilterConfiguration"/>
         <rdfs:comment>Represents one of many instances of a selected filtering option for a Filter instance</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/lpapps#FilterOptionList -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/lpapps#FilterOptionList"/>
     
 
 

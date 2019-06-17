@@ -39,7 +39,7 @@
 # https://w3id.org/def/lpapps#options
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#FilterOptionList> .
+<https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#Filter> .
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/lpapps#FilterOption> .
 # 
 # https://w3id.org/def/lpapps#schemeFilter
@@ -180,9 +180,6 @@
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/lpapps#FilterConfiguration> .
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents one of many instances of a selected filtering option for a Filter instance" .
-# 
-# https://w3id.org/def/lpapps#FilterOptionList
-<https://w3id.org/def/lpapps#FilterOptionList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/lpapps#NodesFilter
 <https://w3id.org/def/lpapps#NodesFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
