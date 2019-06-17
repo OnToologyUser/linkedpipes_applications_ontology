@@ -41,13 +41,6 @@ Author: Altynbek Orumbayev"""@en ;
             rdfs:comment "Identifies relation between the VisualizerConfiguration and FilterConfiguration entities"@en .
 
 
-###  https://w3id.org/def/lpapps#items
-:items rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf owl:topObjectProperty ;
-       rdfs:domain :FilterOptionList ;
-       rdfs:range :FilterOption .
-
-
 ###  https://w3id.org/def/lpapps#nodesFilter
 :nodesFilter rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
@@ -58,8 +51,8 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#options
 :options rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :Filter ;
-         rdfs:range :FilterOptionList .
+         rdfs:domain :FilterOptionList ;
+         rdfs:range :FilterOption .
 
 
 ###  https://w3id.org/def/lpapps#schemeFilter
@@ -85,13 +78,6 @@ Author: Altynbek Orumbayev"""@en ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :VisualizerConfiguration ;
                  rdfs:range xsd:string .
-
-
-###  https://w3id.org/def/lpapps#checked
-:checked rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain :FilterOption ;
-         rdfs:range xsd:boolean .
 
 
 ###  https://w3id.org/def/lpapps#configurationId
@@ -147,6 +133,13 @@ Author: Altynbek Orumbayev"""@en ;
 :published rdf:type owl:DatatypeProperty ;
            rdfs:domain :Configuration ;
            rdfs:range xsd:dateTime .
+
+
+###  https://w3id.org/def/lpapps#selected
+:selected rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :FilterOption ;
+          rdfs:range xsd:boolean .
 
 
 ###  https://w3id.org/def/lpapps#title

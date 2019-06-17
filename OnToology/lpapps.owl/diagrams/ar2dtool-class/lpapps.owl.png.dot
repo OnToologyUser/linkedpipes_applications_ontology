@@ -2,10 +2,10 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:FilterOptionList" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:Filter" "base:SchemeFilter" "http://xmlns.com/foaf/0.1/Person" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+	"base:selected" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:schemeFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:author" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:endpoint" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"base:checked" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:label" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:graphIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:options" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
@@ -13,7 +13,6 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:filterGroups" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:backgroundColor" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:etlExecutionIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"base:items" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:configurationId" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:enabled" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:applicationData" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -27,7 +26,6 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:FilterOption" -> "xsd:string" [ label = "base:uri" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:backgroundColor" ];
 	"base:Configuration" -> "xsd:string" [ label = "base:title" ];
-	"base:FilterOptionList" -> "base:FilterOption" [ label = "base:items" ];
 	"base:FilterConfiguration" -> "base:FilterGroup" [ label = "base:filterGroups" ];
 	"base:FilterGroup" -> "base:NodesFilter" [ label = "base:nodesFilter" ];
 	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:enabled" ];
@@ -41,8 +39,8 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:F
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:configurationId" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:applicationData" ];
 	"base:Configuration" -> "http://xmlns.com/foaf/0.1/Person" [ label = "base:author" ];
-	"base:Filter" -> "base:FilterOptionList" [ label = "base:options" ];
-	"base:FilterOption" -> "xsd:boolean" [ label = "base:checked" ];
+	"base:FilterOptionList" -> "base:FilterOption" [ label = "base:options" ];
+	"base:FilterOption" -> "xsd:boolean" [ label = "base:selected" ];
 	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:visible" ];
 	"base:Configuration" -> "xsd:dateTime" [ label = "base:published" ];
 

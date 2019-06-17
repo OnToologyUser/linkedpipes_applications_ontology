@@ -97,8 +97,7 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/def/lpapps#filterType" title="https://w3id.org/def/lpapps#filterType">filter type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">options</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -157,13 +156,13 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#checked" title="https://w3id.org/def/lpapps#checked">checked</a>
+            <a href="#https://w3id.org/def/lpapps#selected" title="https://w3id.org/def/lpapps#selected">selected</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#uri" title="https://w3id.org/def/lpapps#uri">uri</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">items</a>
+            <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">options</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -275,11 +274,6 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/lpapps#items" title="https://w3id.org/def/lpapps#items">
-            <span>items</span>
-         </a>
-      </li>
-      <li>
          <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">
             <span>nodes filter</span>
          </a>
@@ -380,32 +374,6 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.org/def/lpapps#items">
-      <h3>items<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/lpapps#items</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <span class="dotted" title="https://w3id.org/def/lpapps#FilterOptionList">filter option list</span>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="https://w3id.org/def/lpapps#nodesFilter">
       <h3>nodes filter<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -447,12 +415,12 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterOptionList">filter option list</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="https://w3id.org/def/lpapps#FilterOptionList">filter option list</span>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -498,11 +466,6 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/lpapps#checked" title="https://w3id.org/def/lpapps#checked">
-            <span>checked</span>
-         </a>
-      </li>
-      <li>
          <a href="#https://w3id.org/def/lpapps#configurationId" title="https://w3id.org/def/lpapps#configurationId">
             <span>configuration id</span>
          </a>
@@ -540,6 +503,11 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#https://w3id.org/def/lpapps#published" title="https://w3id.org/def/lpapps#published">
             <span>published</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#selected" title="https://w3id.org/def/lpapps#selected">
+            <span>selected</span>
          </a>
       </li>
       <li>
@@ -611,31 +579,6 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/def/lpapps#checked">
-      <h3>checked<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/lpapps#checked</p>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
@@ -836,6 +779,31 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#selected">
+      <h3>selected<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#selected</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
