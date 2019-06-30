@@ -19,6 +19,9 @@
     "Filter" : {
       "@id" : "https://w3id.org/def/lpapps#Filter"
     },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
@@ -116,6 +119,10 @@
     "nodesFilter" : {
       "@id" : "https://w3id.org/def/lpapps#nodesFilter",
       "@type" : "@id"
+    },
+    "lpStorage" : {
+      "@id" : "https://w3id.org/def/lpapps#lpStorage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "visualizerType" : {
       "@id" : "https://w3id.org/def/lpapps#visualizerType",
