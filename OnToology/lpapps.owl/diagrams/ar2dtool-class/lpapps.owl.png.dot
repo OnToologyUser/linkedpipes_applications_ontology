@@ -9,6 +9,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:S
 	"base:label" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:graphIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:options" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:lpStorage" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:filteredBy" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:filterGroups" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:backgroundColor" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -22,6 +23,7 @@ node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:S
 	"base:filterType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:visualizerType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"base:visible" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:lpStorage" ];
 	"base:VisualizerConfiguration" -> "base:FilterConfiguration" [ label = "base:filteredBy" ];
 	"base:FilterOption" -> "xsd:string" [ label = "base:uri" ];
 	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:backgroundColor" ];

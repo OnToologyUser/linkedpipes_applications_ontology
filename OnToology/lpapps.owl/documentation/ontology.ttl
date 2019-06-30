@@ -129,6 +129,13 @@ Author: Altynbek Orumbayev"""@en ;
        rdfs:range xsd:string .
 
 
+###  https://w3id.org/def/lpapps#lpStorage
+:lpStorage rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range xsd:string .
+
+
 ###  https://w3id.org/def/lpapps#published
 :published rdf:type owl:DatatypeProperty ;
            rdfs:domain :Configuration ;
