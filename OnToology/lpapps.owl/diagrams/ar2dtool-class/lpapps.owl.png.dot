@@ -1,0 +1,55 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:VisualizerConfiguration" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:Filter" "base:MapFilters" "base:SchemeFilter" "http://xmlns.com/foaf/0.1/Person" "base:MapFilterGroup" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+	"base:selected" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:schemeFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:author" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:endpoint" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filterLabel" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:label" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filters" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:graphIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:options" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:lpStorage" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filteredBy" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filterGroups" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:backgroundColor" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:etlExecutionIri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filterUri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:configurationId" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:enabled" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:title" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:uri" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:applicationData" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:nodesFilter" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:filterType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:visualizerType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:visible" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:VisualizerConfiguration" -> "base:FilterConfiguration" [ label = "base:filteredBy" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:backgroundColor" ];
+	"base:Configuration" -> "xsd:string" [ label = "base:title" ];
+	"base:FilterConfiguration" -> "base:FilterGroup" [ label = "base:filterGroups" ];
+	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:enabled" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:graphIri" ];
+	"base:MapFilters" -> "base:MapFilterGroup" [ label = "base:filters" ];
+	"base:MapFilterGroup" -> "xsd:string" [ label = "base:filterUri" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:configurationId" ];
+	"base:Configuration" -> "http://xmlns.com/foaf/0.1/Person" [ label = "base:author" ];
+	"base:FilterConfiguration" -> "xsd:boolean" [ label = "base:visible" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:lpStorage" ];
+	"base:FilterOption" -> "xsd:string" [ label = "base:uri" ];
+	"base:FilterGroup" -> "base:NodesFilter" [ label = "base:nodesFilter" ];
+	"base:MapFilterGroup" -> "xsd:string" [ label = "base:filterLabel" ];
+	"base:FilterGroup" -> "base:SchemeFilter" [ label = "base:schemeFilter" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:visualizerType" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:etlExecutionIri" ];
+	"base:FilterConfiguration" -> "xsd:string" [ label = "base:label" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:endpoint" ];
+	"base:Filter" -> "xsd:string" [ label = "base:filterType" ];
+	"base:VisualizerConfiguration" -> "xsd:string" [ label = "base:applicationData" ];
+	"base:Filter" -> "base:FilterOption" [ label = "base:options" ];
+	"base:FilterOption" -> "xsd:boolean" [ label = "base:selected" ];
+	"base:Configuration" -> "xsd:dateTime" [ label = "base:published" ];
+
+}

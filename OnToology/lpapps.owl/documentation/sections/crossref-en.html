@@ -1,0 +1,1105 @@
+<html><h2 id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">
+            <span>configuration</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">
+            <span>filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">
+            <span>filter configuration</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">
+            <span>filter option</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#MapFilterGroup" title="https://w3id.org/def/lpapps#MapFilterGroup">
+            <span>map filter group</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#MapFilters" title="https://w3id.org/def/lpapps#MapFilters">
+            <span>map filters</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">
+            <span>nodes filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">
+            <span>scheme filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+            title="https://w3id.org/def/lpapps#VisualizerConfiguration">
+            <span>visualizer configuration</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/def/lpapps#Configuration">
+      <h3>configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#Configuration</p>
+      <div class="comment">
+         <span class="markdown">Represents an abstract configuration document</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+               title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">author</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#published" title="https://w3id.org/def/lpapps#published">published</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#title" title="https://w3id.org/def/lpapps#title">title</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#Filter">
+      <h3>filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#Filter</p>
+      <div class="comment">
+         <span class="markdown">Represents a single Filter object. Defined by a label and value properties</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#MapFilters" title="https://w3id.org/def/lpapps#MapFilters">map filters</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">nodes filter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">scheme filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filterType" title="https://w3id.org/def/lpapps#filterType">filter type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">options</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#FilterConfiguration">
+      <h3>filter configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#FilterConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Represents a document describing the configurations of filters applied to a specific VisualizerConfiguration</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#enabled" title="https://w3id.org/def/lpapps#enabled">enabled</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">filter groups</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">label</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#visible" title="https://w3id.org/def/lpapps#visible">visible</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">filtered by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#FilterOption">
+      <h3>filter option<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#FilterOption</p>
+      <div class="comment">
+         <span class="markdown">Represents one of many instances of a selected filtering option for a Filter instance</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#selected" title="https://w3id.org/def/lpapps#selected">selected</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#uri" title="https://w3id.org/def/lpapps#uri">uri</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">options</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#MapFilterGroup">
+      <h3>map filter group<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#MapFilterGroup</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filterLabel" title="https://w3id.org/def/lpapps#filterLabel">filter label</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#filterUri" title="https://w3id.org/def/lpapps#filterUri">filter uri</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">options</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filters" title="https://w3id.org/def/lpapps#filters">filters</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#MapFilters">
+      <h3>map filters<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#MapFilters</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#filters" title="https://w3id.org/def/lpapps#filters">filters</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#NodesFilter">
+      <h3>nodes filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#NodesFilter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">nodes filter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+      <div class="comment">
+         <span class="markdown">Refers to WebID profile of an author of this configuration</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">author</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#SchemeFilter">
+      <h3>scheme filter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#SchemeFilter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#schemeFilter" title="https://w3id.org/def/lpapps#schemeFilter">scheme filter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#VisualizerConfiguration">
+      <h3>visualizer configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#VisualizerConfiguration</p>
+      <div class="comment">
+         <span class="markdown">Represents an application's configuration document and contains parameters necessary for recreating the application inside the LinkedPipes Application platform.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/lpapps#applicationData" title="https://w3id.org/def/lpapps#applicationData">application data</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#backgroundColor" title="https://w3id.org/def/lpapps#backgroundColor">background color</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#configurationId" title="https://w3id.org/def/lpapps#configurationId">configuration id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#endpoint" title="https://w3id.org/def/lpapps#endpoint">endpoint</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#etlExecutionIri" title="https://w3id.org/def/lpapps#etlExecutionIri">etl execution iri</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">filtered by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/lpapps#graphIri" title="https://w3id.org/def/lpapps#graphIri">graph iri</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/lpapps#visualizerType" title="https://w3id.org/def/lpapps#visualizerType">visualizer type</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/def/lpapps#author" title="https://w3id.org/def/lpapps#author">
+            <span>author</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filterGroups" title="https://w3id.org/def/lpapps#filterGroups">
+            <span>filter groups</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filteredBy" title="https://w3id.org/def/lpapps#filteredBy">
+            <span>filtered by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filters" title="https://w3id.org/def/lpapps#filters">
+            <span>filters</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#nodesFilter" title="https://w3id.org/def/lpapps#nodesFilter">
+            <span>nodes filter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#options" title="https://w3id.org/def/lpapps#options">
+            <span>options</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#schemeFilter" title="https://w3id.org/def/lpapps#schemeFilter">
+            <span>scheme filter</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/def/lpapps#author">
+      <h3>author<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#author</p>
+      <div class="comment">
+         <span class="markdown">Identifies the Author's WebID</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filterGroups">
+      <h3>filter groups<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterGroups</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filteredBy">
+      <h3>filtered by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filteredBy</p>
+      <div class="comment">
+         <span class="markdown">Identifies relation between the VisualizerConfiguration and FilterConfiguration entities</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filters">
+      <h3>filters<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filters</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#MapFilters" title="https://w3id.org/def/lpapps#MapFilters">map filters</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#MapFilterGroup" title="https://w3id.org/def/lpapps#MapFilterGroup">map filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#nodesFilter">
+      <h3>nodes filter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#nodesFilter</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#NodesFilter" title="https://w3id.org/def/lpapps#NodesFilter">nodes filter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#options">
+      <h3>options<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#options</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#MapFilterGroup" title="https://w3id.org/def/lpapps#MapFilterGroup">map filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#schemeFilter">
+      <h3>scheme filter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#schemeFilter</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="https://w3id.org/def/lpapps#FilterGroup">filter group</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#SchemeFilter" title="https://w3id.org/def/lpapps#SchemeFilter">scheme filter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/def/lpapps#applicationData" title="https://w3id.org/def/lpapps#applicationData">
+            <span>application data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#backgroundColor" title="https://w3id.org/def/lpapps#backgroundColor">
+            <span>background color</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#configurationId" title="https://w3id.org/def/lpapps#configurationId">
+            <span>configuration id</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#enabled" title="https://w3id.org/def/lpapps#enabled">
+            <span>enabled</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#endpoint" title="https://w3id.org/def/lpapps#endpoint">
+            <span>endpoint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#etlExecutionIri" title="https://w3id.org/def/lpapps#etlExecutionIri">
+            <span>etl execution iri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filterLabel" title="https://w3id.org/def/lpapps#filterLabel">
+            <span>filter label</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filterType" title="https://w3id.org/def/lpapps#filterType">
+            <span>filter type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#filterUri" title="https://w3id.org/def/lpapps#filterUri">
+            <span>filter uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#graphIri" title="https://w3id.org/def/lpapps#graphIri">
+            <span>graph iri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#label" title="https://w3id.org/def/lpapps#label">
+            <span>label</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#lpStorage" title="https://w3id.org/def/lpapps#lpStorage">
+            <span>lp storage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#published" title="https://w3id.org/def/lpapps#published">
+            <span>published</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#selected" title="https://w3id.org/def/lpapps#selected">
+            <span>selected</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#title" title="https://w3id.org/def/lpapps#title">
+            <span>title</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#uri" title="https://w3id.org/def/lpapps#uri">
+            <span>uri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#visible" title="https://w3id.org/def/lpapps#visible">
+            <span>visible</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/lpapps#visualizerType" title="https://w3id.org/def/lpapps#visualizerType">
+            <span>visualizer type</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/def/lpapps#applicationData">
+      <h3>application data<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#applicationData</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#backgroundColor">
+      <h3>background color<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#backgroundColor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#configurationId">
+      <h3>configuration id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#configurationId</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#enabled">
+      <h3>enabled<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#enabled</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#endpoint">
+      <h3>endpoint<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#endpoint</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#etlExecutionIri">
+      <h3>etl execution iri<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#etlExecutionIri</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filterLabel">
+      <h3>filter label<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterLabel</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#MapFilterGroup" title="https://w3id.org/def/lpapps#MapFilterGroup">map filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filterType">
+      <h3>filter type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterType</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#Filter" title="https://w3id.org/def/lpapps#Filter">filter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#filterUri">
+      <h3>filter uri<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#filterUri</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#MapFilterGroup" title="https://w3id.org/def/lpapps#MapFilterGroup">map filter group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#graphIri">
+      <h3>graph iri<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#graphIri</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#label">
+      <h3>label<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#label</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#lpStorage">
+      <h3>lp storage<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#lpStorage</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#published">
+      <h3>published<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#published</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#selected">
+      <h3>selected<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#selected</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#title">
+      <h3>title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#title</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#Configuration" title="https://w3id.org/def/lpapps#Configuration">configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#uri">
+      <h3>uri<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#uri</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterOption" title="https://w3id.org/def/lpapps#FilterOption">filter option</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#visible">
+      <h3>visible<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#visible</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#FilterConfiguration" title="https://w3id.org/def/lpapps#FilterConfiguration">filter configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/lpapps#visualizerType">
+      <h3>visualizer type<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/lpapps#visualizerType</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/lpapps#VisualizerConfiguration"
+                  title="https://w3id.org/def/lpapps#VisualizerConfiguration">visualizer configuration</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>
