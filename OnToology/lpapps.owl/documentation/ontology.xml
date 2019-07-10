@@ -374,20 +374,20 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/def/lpapps#MapFilter -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/lpapps#MapFilter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Filter"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/lpapps#MapFilterGroup -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/lpapps#MapFilterGroup">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#FilterGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/lpapps#MapFilters -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/lpapps#MapFilters">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/lpapps#Filter"/>
     </owl:Class>
     
 

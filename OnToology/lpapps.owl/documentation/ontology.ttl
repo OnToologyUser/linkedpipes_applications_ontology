@@ -228,14 +228,14 @@ Author: Altynbek Orumbayev"""@en ;
               rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
 
 
-###  https://w3id.org/def/lpapps#MapFilter
-:MapFilter rdf:type owl:Class ;
-           rdfs:subClassOf :Filter .
-
-
 ###  https://w3id.org/def/lpapps#MapFilterGroup
 :MapFilterGroup rdf:type owl:Class ;
                 rdfs:subClassOf :FilterGroup .
+
+
+###  https://w3id.org/def/lpapps#MapFilters
+:MapFilters rdf:type owl:Class ;
+            rdfs:subClassOf :Filter .
 
 
 ###  https://w3id.org/def/lpapps#NodesFilter
