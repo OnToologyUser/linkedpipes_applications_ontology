@@ -51,7 +51,8 @@ Author: Altynbek Orumbayev"""@en ;
 ###  https://w3id.org/def/lpapps#options
 :options rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :Filter ;
+         rdfs:domain :Filter ,
+                     :MapFilterGroup ;
          rdfs:range :FilterOption .
 
 
@@ -108,11 +109,25 @@ Author: Altynbek Orumbayev"""@en ;
                  rdfs:range xsd:string .
 
 
+###  https://w3id.org/def/lpapps#filterLabel
+:filterLabel rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :MapFilterGroup ;
+             rdfs:range xsd:string .
+
+
 ###  https://w3id.org/def/lpapps#filterType
 :filterType rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :Filter ;
             rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/lpapps#filterUri
+:filterUri rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :MapFilterGroup ;
+           rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/lpapps#graphIri
@@ -211,6 +226,16 @@ Author: Altynbek Orumbayev"""@en ;
 :FilterOption rdf:type owl:Class ;
               rdfs:subClassOf :FilterConfiguration ;
               rdfs:comment "Represents one of many instances of a selected filtering option for a Filter instance" .
+
+
+###  https://w3id.org/def/lpapps#MapFilter
+:MapFilter rdf:type owl:Class ;
+           rdfs:subClassOf :Filter .
+
+
+###  https://w3id.org/def/lpapps#MapFilterGroup
+:MapFilterGroup rdf:type owl:Class ;
+                rdfs:subClassOf :FilterGroup .
 
 
 ###  https://w3id.org/def/lpapps#NodesFilter

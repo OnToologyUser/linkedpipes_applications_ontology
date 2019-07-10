@@ -1,12 +1,14 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:VisualizerConfiguration" "base:SchemeFilter" "base:NodesFilter" "base:FilterOption" "base:FilterConfiguration" "base:Filter" "base:Configuration" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:VisualizerConfiguration" "base:MapFilter" "base:FilterGroup" "base:FilterOption" "base:NodesFilter" "base:Filter" "base:SchemeFilter" "base:MapFilterGroup" "base:FilterConfiguration" "base:Configuration" ; /*classes style*/
+	"base:MapFilterGroup" -> "base:FilterGroup" [ label = "rdfs:subClassOf" ];
 	"base:SchemeFilter" -> "base:Filter" [ label = "rdfs:subClassOf" ];
 	"base:VisualizerConfiguration" -> "base:Configuration" [ label = "rdfs:subClassOf" ];
 	"base:NodesFilter" -> "base:Filter" [ label = "rdfs:subClassOf" ];
 	"base:FilterConfiguration" -> "base:Configuration" [ label = "rdfs:subClassOf" ];
 	"base:FilterOption" -> "base:FilterConfiguration" [ label = "rdfs:subClassOf" ];
+	"base:MapFilter" -> "base:Filter" [ label = "rdfs:subClassOf" ];
 	"base:Filter" -> "base:FilterConfiguration" [ label = "rdfs:subClassOf" ];
 
 }
