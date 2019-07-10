@@ -66,9 +66,6 @@
       "@id" : "https://w3id.org/def/lpapps#configurationId",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "MapFilter" : {
-      "@id" : "https://w3id.org/def/lpapps#MapFilter"
-    },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
       "@type" : "@id"
@@ -86,6 +83,9 @@
     "visible" : {
       "@id" : "https://w3id.org/def/lpapps#visible",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MapFilters" : {
+      "@id" : "https://w3id.org/def/lpapps#MapFilters"
     },
     "filterUri" : {
       "@id" : "https://w3id.org/def/lpapps#filterUri",

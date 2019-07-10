@@ -56,16 +56,16 @@
     "@id" : "https://w3id.org/def/lpapps#FilterConfiguration"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/lpapps#MapFilter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/lpapps#Filter"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/lpapps#MapFilterGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/lpapps#FilterGroup"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/lpapps#MapFilters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/lpapps#Filter"
   } ]
 }, {
   "@id" : "https://w3id.org/def/lpapps#NodesFilter",
