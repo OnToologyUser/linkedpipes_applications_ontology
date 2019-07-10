@@ -41,6 +41,13 @@ Author: Altynbek Orumbayev"""@en ;
             rdfs:comment "Identifies relation between the VisualizerConfiguration and FilterConfiguration entities"@en .
 
 
+###  https://w3id.org/def/lpapps#filters
+:filters rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :MapFilters ;
+         rdfs:range :MapFilterGroup .
+
+
 ###  https://w3id.org/def/lpapps#nodesFilter
 :nodesFilter rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;

@@ -59,6 +59,10 @@
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
+    "filters" : {
+      "@id" : "https://w3id.org/def/lpapps#filters",
+      "@type" : "@id"
+    },
     "FilterOption" : {
       "@id" : "https://w3id.org/def/lpapps#FilterOption"
     },
