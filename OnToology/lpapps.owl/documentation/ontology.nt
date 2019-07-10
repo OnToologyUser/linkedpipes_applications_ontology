@@ -40,6 +40,7 @@
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#Filter> .
+<https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#MapFilterGroup> .
 <https://w3id.org/def/lpapps#options> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/lpapps#FilterOption> .
 # 
 # https://w3id.org/def/lpapps#schemeFilter
@@ -93,11 +94,23 @@
 <https://w3id.org/def/lpapps#etlExecutionIri> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#VisualizerConfiguration> .
 <https://w3id.org/def/lpapps#etlExecutionIri> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
+# https://w3id.org/def/lpapps#filterLabel
+<https://w3id.org/def/lpapps#filterLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/lpapps#filterLabel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/lpapps#filterLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#MapFilterGroup> .
+<https://w3id.org/def/lpapps#filterLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
 # https://w3id.org/def/lpapps#filterType
 <https://w3id.org/def/lpapps#filterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/lpapps#filterType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://w3id.org/def/lpapps#filterType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#Filter> .
 <https://w3id.org/def/lpapps#filterType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/lpapps#filterUri
+<https://w3id.org/def/lpapps#filterUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/lpapps#filterUri> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/lpapps#filterUri> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/lpapps#MapFilterGroup> .
+<https://w3id.org/def/lpapps#filterUri> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://w3id.org/def/lpapps#graphIri
 <https://w3id.org/def/lpapps#graphIri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -186,6 +199,14 @@
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/lpapps#FilterConfiguration> .
 <https://w3id.org/def/lpapps#FilterOption> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents one of many instances of a selected filtering option for a Filter instance" .
+# 
+# https://w3id.org/def/lpapps#MapFilter
+<https://w3id.org/def/lpapps#MapFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/lpapps#MapFilter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/lpapps#Filter> .
+# 
+# https://w3id.org/def/lpapps#MapFilterGroup
+<https://w3id.org/def/lpapps#MapFilterGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/lpapps#MapFilterGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/lpapps#FilterGroup> .
 # 
 # https://w3id.org/def/lpapps#NodesFilter
 <https://w3id.org/def/lpapps#NodesFilter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
