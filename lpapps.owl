@@ -60,6 +60,16 @@ Author: Altynbek Orumbayev</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/def/lpapps#filters -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#filters">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/lpapps#MapFilters"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/lpapps#MapFilterGroup"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/lpapps#nodesFilter -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/lpapps#nodesFilter">
